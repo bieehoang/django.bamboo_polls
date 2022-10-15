@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: django-polls
+Version: 0.1
+Summary: A Django app to conduct web-based polls
+Home-page: https://github.com/Qiese
+Author: bieehoang
+Author-email: dev.bieehoang.io@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Enviroment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.1.1
+Classifier: Intended Audience :: Developer
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language ::	Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW//HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+
+=== 
+Polls
+===
+
+Here is a app to conduct web-based polls. For each question, visitors can choose between a fixed number of answers
+
+Detailed documentation is in the "docs" directory.
+
+QUICK START
+===
+
+1. Add "Polls" to your INSTALLED_APPS settings like this:
+        INSTALLED_APPS = [
+                ....
+                'polls',
+        ]
+
+2. Include the polls URLconf in your project urls.py like this:
+        path('polls', include('polls.urls')),
+
+3. Run ''python manage.py migrate'' to create the polls models
+
+4. Start the development sever and visit you local host/admin to create polls ( REQUIRED at Admin site - I've setup almost things for you to able to do it)
+
+5. Type your localhost/polls and check the result. 
+
+
+
